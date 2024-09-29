@@ -1,0 +1,169 @@
+@layout('layouts/interviewEmail')
+@set('title', 'Email Verification')
+
+@section('body')
+<link href="https://demo.syntrio.in/designs/profileup/css/custom.css" rel="stylesheet">
+{{--  <style>
+   .register-btn:hover {
+   background: #00008b!important;
+   }
+</style>  --}}
+<table class="container" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;background-color: #f9f9f9;">
+   <tbody>
+      <tr>
+         <td align="center" style="line-height: 24px; font-size: 16px; margin: 0; padding: 0 16px;">
+         <!--[if (gte mso 9)|(IE)]>
+            <table align="center" role="presentation">
+               <tbody>
+               <tr>
+                  <td width="600">
+         <![endif]-->
+         <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 600px; margin: 0 auto;">
+            <tbody>
+               <tr>
+               <td style="line-height: 24px; font-size: 16px; margin: 0;" align="left">
+                  <table class="s-6 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                     <tbody>
+                     <tr>
+                        <td style="line-height: 24px; font-size: 24px; width: 100%; height: 24px; margin: 0;" align="left" width="100%" height="24">
+                           &nbsp;
+                        </td>
+                     </tr>
+                     </tbody>
+                  </table>
+                  <img class="w-16" src="https://demo.syntrio.in/designs/profileup/img/app/logo.png" style="height: auto; line-height: 100%; outline: none; text-decoration: none; display: block; width: 64px; border-style: none; border-width: 0;" width="64">
+                  <table class="s-6 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                     <tbody>
+                     <tr>
+                        <td style="line-height: 24px; font-size: 24px; width: 100%; height: 24px; margin: 0;" align="left" width="100%" height="24">
+                           &nbsp;
+                        </td>
+                     </tr>
+                     </tbody>
+                  </table>
+                  <div class="space-y-4">
+                     {{--  <h1 class="text-4xl fw-800" style="padding-top: 0; padding-bottom: 0; font-weight: 800 !important; vertical-align: baseline; font-size: 36px; line-height: 43.2px; margin: 0;" align="left">Your interview has been cancelled</h1>  --}}
+                     <h1 class="text-4xl fw-800" style="padding-top: 0; padding-bottom: 0; font-weight: 800 !important; vertical-align: baseline; font-size: 36px; line-height: 43.2px; margin: 0;" align="left">
+                            {{subjectTitle}} : {{ company_name }}
+                    </h1>
+                     <table class="s-4 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                     <tbody>
+                        <tr>
+                           <td style="line-height: 16px; font-size: 16px; width: 100%; height: 16px; margin: 0;" align="left" width="100%" height="16">
+                           &nbsp;
+                           </td>
+                        </tr>
+                     </tbody>
+                     </table>
+                     <p class="" style="line-height: 24px; font-size: 16px; width: 100%; margin: 0;" align="left">
+                        Hi {{name}},<br>
+                        {{cancel_comment}}
+                     </p>
+                     <table class="s-4 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                        <tbody>
+                           <tr>
+                              <td style="line-height: 16px; font-size: 16px; width: 100%; height: 16px; margin: 0;" align="left" width="100%" height="16">
+                              &nbsp;
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <table class="s-6 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                     <tbody>
+                     <tr>
+                        <td style="line-height: 24px; font-size: 24px; width: 100%; height: 24px; margin: 0;" align="left" width="100%" height="24">
+                           &nbsp;
+                        </td>
+                     </tr>
+                     </tbody>
+                  </table>
+                  <table class="card rounded-3xl px-4 py-8 p-lg-10" role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-radius: 24px; border-collapse: separate !important; width: 100%; overflow: hidden; border: 1px solid #e2e8f0; display: inline-table;" bgcolor="#ffffff">
+                     <tbody>
+                     <tr>
+                        <td style="line-height: 24px; font-size: 16px; width: 100%; border-radius: 24px; margin: 0; padding: 30px 15px;" align="left" bgcolor="#ffffff">
+                           <h3 class="text-center" style="padding-top: 0; padding-bottom: 0; font-weight: 500; vertical-align: baseline; font-size: 28px; line-height: 33.6px; margin: 0;" align="center">{{contentHeader}}</h3>
+                           {{--  <p class="text-center text-muted" style="line-height: 24px; font-size: 16px; color: #718096; width: 100%; margin: 0;" align="center">Interview ID: #J3421</p>  --}}
+                           <table class="p-2 w-full" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="line-height: 24px; font-size: 16px; width: 100%; margin: 0; padding: 8px;" align="left" width="100%">Reason</td>
+                                 <td class="text-right" style="line-height: 24px; font-size: 16px; width: 100%; margin: 0; padding: 8px;" align="right" width="100%">{{cancel_note}}</td>
+                              </tr>
+                              <tr>
+                                 <td style="line-height: 24px; font-size: 16px; width: 100%; margin: 0; padding: 8px;" align="left" width="100%">Date</td>
+                                 <td class="text-right" style="line-height: 24px; font-size: 16px; width: 100%; margin: 0; padding: 8px;" align="right" width="100%">{{date}}</td>
+                              </tr>
+                              <tr>
+                                 <td style="line-height: 24px; font-size: 16px; width: 100%; margin: 0; padding: 8px;" align="left" width="100%">Time</td>
+                                 <td class="text-right" style="line-height: 24px; font-size: 16px; width: 100%; margin: 0; padding: 8px;" align="right" width="100%">{{startTime}}&nbsp;{{startTimeAm}}&nbsp;to&nbsp;{{endTime}}&nbsp;{{endTimeAm}}</td>
+                              </tr>                                               
+                           </tbody>
+                           </table>
+                           <table class="s-6 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                              <tbody>
+                                 <tr>
+                                    <td style="line-height: 10px; font-size: 24px; width: 100%; height: 24px; margin: 0;" align="left" width="100%" height="24">
+                                    &nbsp;
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           @if(platform)
+                           <table class="hr" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                           {{--  <tbody>
+                              <tr>
+                                 <td style="line-height: 24px; font-size: 16px; border-top-width: 1px; border-top-color: #e2e8f0; border-top-style: solid; height: 1px; width: 100%; margin: 0;" align="left">
+                                    <a href={{url}} style="color: #ffffff; font-size: 16px; text-decoration: none; border-radius: 9999px; line-height: 20px; display: block; font-weight: normal; white-space: nowrap; background-color: #00008b; padding: 8px 24px; text-align: center;">{{platform}}</a>
+                                 </td>
+                              </tr>
+                           </tbody>  --}}
+                           </table>
+                           @endif
+                           {{--  <table class="s-6 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                              <tbody>
+                                 <tr>
+                                    <td style="line-height: 24px; font-size: 24px; width: 100%; height: 24px; margin: 0;" align="left" width="100%" height="24">
+                                    &nbsp;
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>  --}}
+                           <p style="line-height: 24px; font-size: 13px; width: 100%; margin: 0;" align="left">
+                              Best regards,<br>
+                              {{--  Manoj Kumar (HR Manager)<br>  --}}
+                              {{company_name}}.<br>                                              
+                              If you have any questions, contact us at <a href="#" style="color: #0d6efd;">{{email}}
+                           </a></p><a href="#" style="color: #0d6efd;">
+                        </a></td>
+                     </tr>
+                     </tbody>
+                  </table>
+                  <table class="s-6 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                     <tbody>
+                     <tr>
+                        <td width="100%" height="24">
+                           <p>&nbsp;</p>
+                           <p style="line-height: 24px; font-size: 12px; width: 100%; margin: 0;" align="center">
+                              Powered by <a href="#" target="_blank">{{email}}</a>
+                           </p>
+                           <p>&nbsp;</p>
+                        </td>
+                     </tr>
+                     </tbody>
+                  </table>
+               </td>
+               </tr>
+            </tbody>
+         </table>
+         <!--[if (gte mso 9)|(IE)]>
+         </td>
+         </tr>
+      </tbody>
+   </table>
+         <![endif]-->
+         </td>
+      </tr>
+   </tbody>
+   </table>
+@end

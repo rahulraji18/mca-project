@@ -1,0 +1,36 @@
+@layout('layouts/email')
+@set('title', 'Email Verification')
+
+@section('style')
+
+<style>
+   .register-btn:hover {
+      background-color: #00008b;
+      color: #fff;
+   }
+</style>
+
+@end
+
+@section('body')
+
+<table class="container hero-subheader" border="0" cellpadding="0" cellspacing="0" width="620" style="width: 620px;">
+   
+      <tr>
+      <td class="hero-subheader__title" style="padding: 50px 0 50px 0;" align="center">
+      <h1 style="font-family: 'Satoshi'; color: #222; margin: 0; font-weight: 600; font-size: 58px; line-height: 1;">HELLO</h1>
+      <h4 style="color: #000; margin: 0; font-weight: 900; font-size: 24px; line-height: 1.5;">Welcome to <span style="color: #00008b;">Profile</span><span style="color: #ffc000;">UP</span></h4>
+      </td>
+      </tr>
+         <td class="hero-subheader__content" style="font-size: 19.5px; font-weight: 500; line-height: 27px; color: #000; padding: 0 20px 0 20px;" align="left">
+            Hi,																						
+            <br><br>
+            To start the registration on {{env('APPNAME')}}, please click the below button.
+            <p style="margin: 50px 0 100px; text-align: center;">
+               <a class="register-btn" href="{{url}}" style="background-color: #ffc000; border: 0; color: #000; text-decoration: none; padding: 13px 40px 15px; font-size: 20px; border-radius: 40px; font-weight: 600;">Register</a>
+            </p>
+         </td>
+      </tr>
+</table>
+
+@end

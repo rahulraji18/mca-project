@@ -1,0 +1,312 @@
+.c-primary { color: #011893; }
+.b-primary { background-color: #011893; }
+.c-warning { color: #ffc000; }
+.b-warning { background-color: #ffc000; }
+.b-radious-11 { border-radius: 11px; }
+.color-black3 { color: #333; }
+.vertical-align-super { vertical-align: super; }
+.tab-pane ul li { line-height: 1.8; }
+.rdt_TableHeadRow { text-transform: uppercase; }
+.rdt_Table .rdt_TableHead { z-index: 1; }
+.font-20 { font-size: 20px; }
+.tx-17 { font-size: 17px; }
+
+div:where(.swal2-container) div:where(.swal2-popup) { width: 24em!important; }
+/* div:where(.swal2-icon) { width: 2.5em!important; height: 2.5em!important; } */
+div:where(.swal2-icon) .swal2-icon-content { font-size: 2em!important; }
+div:where(.swal2-container) h2:where(.swal2-title) { font-size: 1em!important; }
+div:where(.swal2-container) button:where(.swal2-styled) { font-size: 14px!important; }
+
+.input-filter-div01{ display: flex; justify-content: right; }
+
+/* .collapse-content01 { margin-top: 10px; } */
+
+.input-filter-div01 .filter-action01 { margin-left: 15px; font-size: 22px; margin-right: 0px; }
+.custom-card .card-body header { 
+    display: block; 
+    padding-left: 0;
+    padding-right: 0;
+ }
+.custom-card .card-body header .table-filter-search {
+    clear: right;
+    padding-bottom: 15px;
+}
+
+.filter-table { 
+    float: right;
+    margin-top: 8px;
+    margin-left: 17px;
+    border: 1px solid #e8e8f7 !important;
+    border-radius: 7px;
+}
+
+.table-accordian-filter { float: right; }
+
+.table-accordian-filter .accordion-item { border: 0; }
+
+.table-accordian-filter .accordion-item .accordion-header { float: right; }
+
+.table-accordian-filter .accordion-button { padding: 0; width: auto; background: none; }
+
+.table-accordian-filter .accordion-button:hover { background: none;}
+
+.table-accordian-filter .accordion-button:not(.collapsed) { background-color: transparent; }
+
+.table-accordian-filter .accordion-item .accordion-collapse.collapse.show {
+    position: absolute;
+    right: 0;
+    top: 71px;
+    width: 100%;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.table-accordian-filter .accordion-item .form-label { color: #222;}
+
+.table-accordian-filter .accordion-item .form-control { color: #222;}
+
+.table-accordian-filter .accordion-item .accordion-collapse .custom-card { box-shadow: 0px 12px 23px 0px rgba(92, 55, 153, 0.04); }
+
+.table-accordian-filter.individual .accordion-item .accordion-collapse { top: 45px!important; }
+
+.rdt_TableBody .button-list .dropdown .dropdown-menu.show { 
+    inset: -50px 20px auto auto!important; 
+    transform: none!important;    
+}
+
+.expired-li { background-color: #b3b3b385; opacity: 0.57; }
+
+.profile-tab.tab-menu-heading .nav-link.active { font-weight: bold; color: #011893!important; }
+
+.sidemenu-logo img { margin: 0 0; }
+
+.suggestion-peoples a .nav-link-badge {
+    border-radius: 50px;
+    width: 24px;
+    height: auto;
+    font-size: 12px;
+    padding: 6px 7px;
+    position: absolute;
+    right: -6px;
+    bottom: -6px;
+}
+
+.main-content-body-profile .main-profile-contact-list .media-body { margin-left: 20px; }
+
+div a { color: #011893; }
+
+.tabs-style-2 .main-nav-line .nav-link.active, .tabs-style-3 .nav.panel-tabs li a.active, .tabs-style-4 .nav.panel-tabs li a.active {
+    background: #011893; 
+}
+
+.data-table-extensions { padding-right: 0!important; }
+
+.profile-upload01 .uplaod-before01 { width: 100px; height: 100px; border: 1px solid #e8e8f7; border-radius: 5px!important; }
+.profile-upload01 .uplaod-after01 { width: 100px; height: 100px; border: 1px solid #e8e8f7; border-radius: 5px; }
+.profile-upload01 .profile-upload-close { border-radius: 50px; position: absolute; right: 0; }
+
+.meeting-tab .nav-item { width: 33.33%; padding: 0 10px; }
+
+.meeting-tab .nav-item:first-child, .meeting-tab .nav-item:last-child { padding: 0 0px; }
+
+.meeting-tab .nav-item .nav-link { display: flex; align-items: center; }
+
+.meeting-tab .nav-item .nav-link .nav-link-badge { margin-left: auto; }
+
+.meeting-tab .tab-content .tab-pane .card-aside { border: 1px solid #e6e4f6; }
+
+.org-suggestions .main-profile-contact-list a .nav-link-badge { font-size: 16px; font-weight: 500; color: #000; }
+
+.org-suggestions .main-profile-contact-list .media { align-items: center; }
+
+.tabs-style-2 .main-nav-line .nav-link.active .nav-link-badge { background-color: #ffc000 !important; }
+
+.meeting-tab .tab-content > .active { margin-top: 0px; padding-top: 25px; }
+
+.meeting-tab .aside-left { 
+    border-right: 1px solid #eaedf7; 
+    background-color: #eaedf7; 
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+    position: relative; 
+}
+
+.meeting-tab .card-aside .card-body { background-color: rgb(203 203 203 / 8%); }
+
+.meeting-time { 
+    width: 210px;     
+    padding: 15px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meeting-time .div-date { text-align: center; }
+
+.meeting-time .div-date h1 { 
+    color: #011893;
+    border: 1px solid #ffc000; 
+    background-color: #ffc000; 
+    border-radius: 50px; 
+    padding: 14px 0px; 
+}
+
+.job-details .head-section { display: flex; justify-content: space-between; margin-bottom: 20px; }
+
+.job-details .profile-cover__img01 { display: flex; align-items: center; }
+
+.job-details .profile-cover__img01 .info01 { margin-left: 15px; }
+
+.job-details .head-section .profile-cover__info { display: block; align-items: center; position: relative; }
+
+.job-details .head-section .profile-cover__info .active-info { text-align: right; font-size: 16px; }
+
+.job-details .head-section ul.nav { padding: 0; margin: 0; }
+
+.job-details .head-section ul.nav li { margin: 0; }
+
+.job-details .profile-cover__img01 .org-logo01 {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid #e7eaf6;
+    padding: 1px;
+    background-color: #e7eaf6;
+}
+
+.job-details .profile-cover__img01 .org-logo01 img { width: 100%; height: auto;}
+
+.job-details-sub .job-info01 { margin-right: 20px;}
+
+.job-details-sub .job-info01:last-child { margin-right: 0px;}
+
+
+.organisation-details .opportunities-list .btn-compose { text-align: left; }
+
+.organisation-details .opportunities-list .btn-compose .nav-link-badge { float: right; top: 2px; }
+
+.candidate-details .candidte-name { display: -webkit-box; }
+
+.candidate-details .candidte-name .badge { margin-top: 3px; padding-top: 5px; }
+
+.candidate-aside02  .sub-title01 { display: flex; place-content: space-between; }
+
+.tab-card01 { margin-bottom: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+
+.tab-card02 { border-top-left-radius: 0; border-top-right-radius: 0; }
+
+.tab-card02 .tab-content { padding-top: 0; }
+
+.tab-card02 .tab-content .tab-pane { padding: 0 5px; }
+
+.candidate-details .main-profile-contact-list .media-body { margin-left: 0; }
+
+.candidate-details .main-profile-contact-list .badge { padding: 4px 15px 5px; }
+
+.candidate-accordian .accordion-button { place-content: space-between; }
+
+.candidate-accordian .accordion-button i { font-size: 18px; }
+
+.candidate-accordian .company-info { display: flex; }
+
+.candidate-accordian .accordion-body { padding: 20px 15px; }
+
+.candidate-accordian .list-unstyled li.media {
+    padding: 1rem 0.8rem;
+    border: 1px solid #e8e8f7;
+    border-radius: 11px;  
+    margin-bottom: 15px;  
+}
+
+.candidate-accordian .list-unstyled li.media:last-child { margin-bottom: 0px;  }
+
+.candidate-accordian .list-unstyled li .r-job-div { display: flex; align-items: center; place-content: space-between; }
+
+.candidate-accordian .list-unstyled li .r-job-footer { display: flex; align-items: center; place-content: space-between; }
+
+.candidate-accordian .list-unstyled li .job-company-title { display: flex; align-items: center; }
+
+.candidate-accordian .list-unstyled li .job-company-title .badge { margin-top: -4px; }
+
+.candidate-accordian .list-unstyled li .r-job-footer p:last-child { text-align: right; }
+
+.endorsements-card .custom-card { padding: 15px; }
+
+.endorsements-card .endorsement-img01 {
+    border: 1px solid #e8e8f7;
+    border-radius: 5px;
+    width: 200px;
+    height: auto;
+}
+
+.candidate-asideRight .organisation-details.card { background-color: #e5e8f5; }
+
+.notification-tab .badge-count { padding: 4px 4px!important; border-radius: 50px; }
+
+/* .candidate-asideRight .accordian-recommend-job.accordion-item { border-radius: 11px; } */
+
+/* .candidate-asideRight .accordian-applied-job.accordion-item { margin-top: 15px; border-radius: 11px; } */
+
+.job-note01 ul li { list-style-type: auto; line-height: 1.8; color: #333; }
+
+.job-note01.bio-note01 ul li { list-style-type: none; }
+
+.project-grids01 { display: grid; }
+
+.div-benefit img { width: 50%; height: auto; align-self: center; }
+
+.accordion .accordian-benefits .card-body.p-0 { padding: 0px 10px !important; }
+
+.accordion .accordian-benefits .card-body.p-0 .col-md-4 {padding-right: 10px !important; padding-left: 10px !important; }
+
+.applications-tab .top-info-div { display: flex; align-items: center; justify-content: space-between; }
+
+.applications-tab .name-div { display: flex; align-items: center; }
+
+.candidate-aside02 .tab-card01 .profile-tab.tab-menu-heading .nav-link { padding: 0.5rem 1rem; }
+
+.modal .modal-dialog { overflow: visible; }
+
+.contentTopNav .nav-pills { padding: 0 0 20px; }
+.contentTopNav .nav-pills .nav-item { margin-right: 15px; }
+.contentTopNav .nav-pills .nav-item:last-child { margin-right: 0px; }
+.contentTopNav .nav-pills .nav-item .nav-link {
+    border-radius: 40px;
+    border: 1px solid #ddd;
+    color: #222;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 4px 16px 8px;
+    margin-right: 15px;
+}
+.contentTopNav .nav-pills .nav-item .nav-link:hover {
+    background-color: #ddd;
+    color: var(--primary)!important;
+}
+.main-notification-list.blog-list .main-img-user{
+    font-size: 24px;
+    width: auto;
+    height: auto;
+    font-weight: 600;
+}
+.main-notification-list.blog-list .main-img-user i {
+    color: #ffc000;
+}
+.main-notification-list hr {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.user-mgt-box01 .form-check-label { margin-top: 1px; }
+.profile-box-left01 .main-content-label {
+    display: flex;
+    justify-content: space-between;
+}
+.profile-box-left01 .main-content-label .link-red, .delete-btn-box-right .main-content-label .link-red {
+    text-transform: initial;
+    color: red;
+    font-weight: 500;
+    font-size: 12px;
+}
+.profile-box-left01 .main-content-label .link-red:hover, .delete-btn-box-right .main-content-label .link-red:hover {
+    color: #011893;
+}

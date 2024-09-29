@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>Application details</title>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" rel="stylesheet" />
+   </head>
+   <style>
+      .correct-answer {
+    border: 2px solid #174e14;
+    border-radius: 5px;
+    padding: 8px 32px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+   </style>
+   <body style="color: #333; font-family: 'PT Sans', sans-serif;">
+      <table align="center" cellpadding="0" cellspacing="0" width="1200" style="border: 1px solid #00000020; border-radius: 5px; padding: 25px; color: #333; font-family: 'PT Sans', sans-serif;">
+         <tr>
+            <td>
+               <table style="width: 100%;">
+                  <tr>
+                     <td style="padding: .5rem; width: 20%; padding: .5rem;">
+                        {{ COMPANY_URL }}
+                        <p style="margin: 0; margin-bottom: 5px; font-weight: 600;">{{ COMPANY_NAME }}</p>
+                        <p style="margin: 0; line-height: 1.3;"></p>
+                     </td>
+                     <td style="padding: .5rem; width: 35%; padding: .5rem; text-align: right;">
+                        <div style="margin-left: auto; width: 64px; border-radius: 15px;">
+                           {{ PROFILE_URL }}
+                        </div>
+                        <p style="margin: 0; margin-bottom: 5px; font-weight: 600;">{{ USER_NAME }} {{ ID }}</p>
+                        <p style="margin: 0; line-height: 1.3;">{{ DESIGNATION }} | {{ EXPERIENCE }} yrs exp</p>
+                        <p style="margin: 0; line-height: 1.3;">{{ CITY }} {{ COUNTRY }}</p>
+                        <p style="margin: 0; line-height: 1.3;">{{ EMAIL }}</p>
+                        <p style="margin: 0; margin-top: 3px; line-height: 1.3;">{{ MOBILE }}</p>
+                     </td>
+                  </tr>
+               </table>
+               <table style="width: 100%; border-top: 1px solid #00000020; border-bottom: 1px solid #00000020; padding: 5px 0; margin-top: 5px; margin-bottom: 15px;">
+                  <tr>
+                     <td style="padding: .5rem;">Total Questions : {{ QUESTION_COUNT }}</td>
+                     <td style="padding: .5rem;">
+                        <p style="margin: 0; line-height: 1.3; text-align: center; font-size: 20px; font-weight: 600;">{{DESIGNATION_TEST}} - Assessment</p>
+                     </td>
+                     <td style="padding: .5rem; text-align: right;">Test Duration : 1 hrs 30 min</td>
+                  </tr>
+               </table>
+               <!--    question answer -->
+               {{ QUESTION }}
+               
+               <!--    Footer Section 1 Start -->
+               <table width="100%" style="margin-top: 15px; border-top: 1px solid #00000020; padding-top: 15px;">
+                  <tr>
+                     <td>
+                        <p style="margin: 0; font-size: 12px;">Date : 23 April 2024</p>
+                     </td>
+                     <td>
+                        <p align="right" style="font-size: 12px; width: 100%; margin: 0px;">Powered by <a>profileup.com</a></p>
+                     </td>
+                  </tr>
+               </table>
+               <!--    Footer Section 1 End -->
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>
